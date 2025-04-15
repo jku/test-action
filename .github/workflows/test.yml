@@ -9,3 +9,6 @@ jobs:
         with:
           persist-credentials: false
       - uses: ./
+      - uses: ./
+        with:
+          in: true
