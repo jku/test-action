@@ -1,0 +1,16 @@
+name: test
+inputs:
+  in:
+    description: boolean input
+    default: false
+runs:
+  using: composite
+  steps:
+    - env:
+        IN: ${{ inputs.in }} 
+      run: |
+        echo $IN
+        if [[ $IN == "true" ]]; then
+           echo yes
+        fi
+      
