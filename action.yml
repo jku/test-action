@@ -8,6 +8,7 @@ runs:
   steps:
     - env:
         IN: ${{ inputs.in }} 
+      shell: bash
       run: |
         echo $IN
         if [[ $IN == "true" ]]; then
